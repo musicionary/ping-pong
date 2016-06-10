@@ -38,13 +38,13 @@ function ping(array) {
   console.log(numberArray);
 }
 
-// function
-// for(i = 1; i <= number; i++) {
-//   pingArray.push("<li>" + i.toString() + "</li>");
-// }
-// pingString = pingArray.join("");
-// console.log(pingString);
-
+function pingThatString(array) {
+  for(i = 0; i < array.length; i++) {
+    pingArray.push("<li>" + array[i] + "</li>");
+  }
+  pingString = pingArray.join("");
+  console.log(pingString);
+}
 
 
 /*=======================================
@@ -57,8 +57,8 @@ Front End
 
     createArray(input);
     ping(numberArray);
+    pingThatString(numberArray);
 
-
-    // $("#ping-output").html(pingString);
+    $("#ping-output").html(pingString);
   });
 });
