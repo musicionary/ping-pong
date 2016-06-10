@@ -65,11 +65,15 @@ Front End
 
     //spec: validates that the input is a positive number and alert user if it isn't
     if(input <= 0) {
-      alert("Please enter a valid positive integer");
+      $("#output p").text("Oh no! You are dangerously close to becoming imaginary.  Enter a positive integer.")
     }
     //spec: validates that the input is a number and alert user if it isn't
     if(isNaN(input)) {
-      alert("Please enter only numbers.");
+      $("#output p").text("We're sure you mean well, but please enter numbers only!")
+    }
+
+    if(input >=200) {
+      $("#output p").text("Well, I hope you like scrolling, kind fellow!")
     }
 
     createArray(input);
