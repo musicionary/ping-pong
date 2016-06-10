@@ -1,3 +1,7 @@
+/*=======================================
+Hero
+========================================*/
+
 .jumbotron {
   background-image: url(../img/pong.gif);
   background-repeat: no-repeat;
@@ -16,4 +20,15 @@
 
 .pull-right {
   margin-right: 15%;
+}
+
+/*=======================================
+Output
+========================================*/
+#output {
+  display: none;
+}
+
+#output ul {
+  list-style: none;
 }

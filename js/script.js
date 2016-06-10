@@ -6,6 +6,9 @@ Back End
 var numberArray = [];
 var pingArray = [];
 var pingString = "";
+var ping;
+var pong;
+var pingpong;
 
 
 //spec: create list of numbers up to the number provided by user
@@ -14,7 +17,7 @@ function createArray(number) {
   for(i = 1; i <= number; i++) {
     numberArray.push(i);
   }
-  console.log(numberArray);
+  // console.log(numberArray);
 }
 
 function ping(array) {
@@ -32,16 +35,25 @@ function ping(array) {
       array[j] = "ping";
     }
   }
-  console.log(numberArray);
+  // console.log(numberArray);
 }
 
 //spec: create array of list elements and convert into a string
 function pingThatString(array) {
   for(i = 0; i < array.length; i++) {
-    pingArray.push("<li>" + array[i] + "</li>");
+    // add contextual background styling based on content
+    if(array[i] === "ping") {
+      pingArray.push("<li class='list-group-item-success'>" + array[i] + "</li>");
+    } else if(array[i] === "pong") {
+      pingArray.push("<li class='list-group-item-info'>" + array[i] + "</li>");
+    } else if(array[i] === "pingpong") {
+      pingArray.push("<li class='list-group-item-danger'>" + array[i] + "</li>");
+    } else {
+      pingArray.push("<li>" + array[i] + "</li>");
+    }
   }
+
   pingString = pingArray.join("");
-  console.log(pingString);
 }
 
 
@@ -58,5 +70,8 @@ Front End
     pingThatString(numberArray);
 
     $("#ping-output").html(pingString);
+    $("#ping-output li").addClass("list-group-item");
+
+    $("#output").fadeIn();
   });
 });
