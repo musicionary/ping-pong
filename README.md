@@ -25,16 +25,16 @@ Open index.html in Google Chrome or your default web browser.
   -Output Example: 1, 2, 3, 4, 5
 
 * Numbers divisible by 3 are replaced with "ping"
-  -Input Example: 5
-  -Output Example: 1, 2, 3, 4, 5
+  -Input Example: 6
+  -Output Example: 1, 2, "ping", 4, 5, "ping"
 
 * Numbers divisible by 5 are replaced with "pong"
   -Input Example: 5
-  -Output Example: 1, 2, 3, 4, 5
+  -Output Example: 1, 2, 3, 4, "pong"
 
 * Numbers divisible by 15 are replaced with "pingpong"
-  -Input Example: 5
-  -Output Example: 1, 2, 3, 4, 5
+  -Input Example: 15
+  -Output Example: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong
 
 * A user should be able to enter a new number and see new results over and over again
 
