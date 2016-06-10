@@ -1,0 +1,19 @@
+.jumbotron {
+  background-image: url(../img/pong.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  background-color: #000;
+}
+
+.jumbotron h1 {
+  color: #f9f9f9;
+}
+
+.pull-left {
+  margin-left: 15%;
+}
+
+.pull-right {
+  margin-right: 15%;
+}
