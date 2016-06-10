@@ -6,12 +6,9 @@ Back End
 var numberArray = [];
 var pingArray = [];
 var pingString = "";
-// var re = / /;
-var ping;
-var pong;
+
 
 //spec: create list of numbers up to the number provided by user
-//function to create list up to number provided by user
 function createArray(number) {
   numberArray = [];
   for(i = 1; i <= number; i++) {
@@ -38,6 +35,7 @@ function ping(array) {
   console.log(numberArray);
 }
 
+//spec: create array of list elements and convert into a string
 function pingThatString(array) {
   for(i = 0; i < array.length; i++) {
     pingArray.push("<li>" + array[i] + "</li>");
