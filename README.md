@@ -20,11 +20,23 @@ Open index.html in Google Chrome or your default web browser.
 
 ## Specs
 
-A user should be able to enter a new number and see new results over and over again, with the output containing 1 up to the number given by the user.
+* A user should be able to enter a new number and see new results over and over again, with the output containing 1 up to the number given by the user.
   -Input Example: 5
   -Output Example: 1, 2, 3, 4, 5
 
+* Numbers divisible by 3 are replaced with "ping"
+  -Input Example: 5
+  -Output Example: 1, 2, 3, 4, 5
 
+* Numbers divisible by 5 are replaced with "pong"
+  -Input Example: 5
+  -Output Example: 1, 2, 3, 4, 5
+
+* Numbers divisible by 15 are replaced with "pingpong"
+  -Input Example: 5
+  -Output Example: 1, 2, 3, 4, 5
+
+* A user should be able to enter a new number and see new results over and over again
 
 ## Credits
 
