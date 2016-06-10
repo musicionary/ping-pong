@@ -2,7 +2,6 @@ $(document).ready(function(){
 /*=======================================
 Back End
 ========================================*/
-//variables
 var numberArray = [];
 var pingArray = [];
 var pingString = "";
@@ -14,7 +13,6 @@ function createArray(number) {
   for(i = 1; i <= number; i++) {
     numberArray.push(i);
   }
-  // console.log(numberArray);
 }
 
 function ping(array) {
@@ -32,13 +30,11 @@ function ping(array) {
       array[j] = "ping";
     }
   }
-  // console.log(numberArray);
 }
 
 //spec: create array of list elements and convert into a string
 function pingThatString(array) {
   for(i = 0; i < array.length; i++) {
-    // add contextual background styling based on content
     if(array[i] === "ping") {
       pingArray.push("<li class='list-group-item-success'>" + array[i] + "</li>");
     } else if(array[i] === "pong") {
