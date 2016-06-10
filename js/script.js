@@ -6,9 +6,6 @@ Back End
 var numberArray = [];
 var pingArray = [];
 var pingString = "";
-var ping;
-var pong;
-var pingpong;
 
 
 //spec: create list of numbers up to the number provided by user
@@ -64,6 +61,16 @@ Front End
     event.preventDefault();
     pingArray = [];
     var input = parseInt($("#number").val());
+    console.log(input);
+
+    //spec: validates that the input is a positive number and alert user if it isn't
+    if(input <= 0) {
+      alert("Please enter a valid positive integer");
+    }
+    //spec: validates that the input is a number and alert user if it isn't
+    if(isNaN(input)) {
+      alert("Please enter only numbers.");
+    }
 
     createArray(input);
     ping(numberArray);
@@ -72,6 +79,6 @@ Front End
     $("#ping-output").html(pingString);
     $("#ping-output li").addClass("list-group-item");
 
-    $("#output").fadeIn();
+    $("#output").fadeIn("slow");
   });
 });

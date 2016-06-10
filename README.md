@@ -38,6 +38,11 @@ Open index.html in Google Chrome or your default web browser.
 
 * A user should be able to enter a new number and see new results over and over again
 
+* A user should only be able to enter a number. The program validates that the input is a number and alert user if it isn't
+  -Input Example: "Hi there"
+  -Output Example: alert: "Please only enter valid positive numbers"
+
+
 ## Credits
 
 By Chip Carnes
