@@ -1,0 +1,23 @@
+{
+  "name": "ping-pong",
+  "version": "1.0.0",
+  "description": "A site that lists ping pong numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musicionary/ping-pong.git"
+  },
+  "author": "Chip Carnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musicionary/ping-pong/issues"
+  },
+  "homepage": "https://github.com/musicionary/ping-pong#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1"
+  }
+}
